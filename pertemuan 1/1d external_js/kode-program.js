@@ -1,0 +1,1 @@
+alert("Hello, js ini adalah dari external");

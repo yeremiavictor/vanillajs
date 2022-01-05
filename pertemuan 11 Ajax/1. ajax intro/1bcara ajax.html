@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Belajar dasar ajax</title>
+    </head>
+    <body>
+        <h1>Tutorial Ajax</h1>
+        <div id="hasil"></div>
+        <button onclick="loadContent()">Load Content</button>
+
+        <script>
+        function loadContent(){
+            var xhr = new XMLHttpRequest();
+            var url = "https://api.github.com/users/petanikode";
+            xhr.onreadystatechange = function (){
+                if(this.readyState ==4 && this.status ==200){ // if digunakan untuk cek ajax
+
+
+                    // kode: ajax
+                    // 0	UNSENT	Objek AAJAX sudah dibuat tapi belum memanggil method open().
+                    // 1	OPENED	Method open() sudah dipanggil.
+                    // 2	HEADERS_RECEIVED	Method send() sudah dipanggil, dan di sini sudah tersedia header status.
+                    // 3	LOADING	Downloading; sedang mendownload data.
+                    // 4	DONE	Operasi AJAX selesai.
+
+
+                    //status header kalau diatas 200 artinya baiks
+                    document.getElementById("hasil").innerHTML = this.responseText;
+                    
+                }
+            };
+            xhr.open("GET",url,true);
+            xhr.send();
+        }
+        </script>
+    </body>
+
+</html>

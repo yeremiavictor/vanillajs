@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Pengulangan bersarang
+        </title>
+    </head>
+    <body>
+        <script>
+            var ulangi = confirm("Apakah Anda ingin mengulang? ");
+            var counter = 0 ;
+            while(ulangi){
+                counter++;
+                var bintang = "*".repeat(counter) + "<br>";
+                document.write(counter + ":" +bintang)
+                ulangi = confirm("apakah anda ingin mengulang? ")
+            }
+        </script>
+    </body>
+</html>

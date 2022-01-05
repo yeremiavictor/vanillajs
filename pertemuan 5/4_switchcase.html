@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Percabangan Switch/Case
+        </title>
+    </head>
+    <body>
+        <script>
+            var jawab = prompt("kamu beruntung, silahkan pilih hadiahmu", 1);
+            var hadiah = "";
+
+            switch (jawab) {
+                case "1":
+                    hadiah = "Tissue"
+                    break;
+                case "2":
+                    hadiah = "Tiket SBX"
+                    break;
+                case "3":
+                    hadiah = "Minyak goreng"
+                    break;
+                case "4":
+                    hadiah = "Indomie"
+                    break;
+                case "5":
+                    hadiah = "Uang Rp 50.000,-"
+                    break;
+            
+                default:
+                    document.write("<p> ops anda salah pilih </p>");
+            }
+
+            if (hadiah === "") {
+                document.write("<p> kamu gagal dapat hadiah </p>");
+            } else {
+                document.write("<h2> Selamat kamu mendapatkan: "+ hadiah +" </h2>");
+            }
+        </script>
+    </body>
+</html>

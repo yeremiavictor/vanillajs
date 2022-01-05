@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Belajar menggunakan ajax</title>
+    </head>
+    <body>
+        <script>
+            //membuat object ajax
+            var xhr = newXMLHttpRequest();
+
+            //menentuka handler event
+            xhr.onreadystatechange = function() {};
+            xhr.onload = function(){};
+            xhr.onerror = function(){};
+            xhr.onprogress = function(){};
+            
+            //menentukan method dan url
+            xhr.open("GET",url,true);
+
+            //mengirim request
+            xhr.send();
+        </script>
+    </body>
+</html>

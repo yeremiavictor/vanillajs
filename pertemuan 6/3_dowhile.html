@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Pengulangan do while
+        </title>
+    </head>
+    <body>
+        <script>
+            var ulangi=confirm("Apakah Anda mau mengulang");
+            var counter = 0;
+
+            do {
+                counter ++;
+                ulangi = confirm("Apakah Anda mau mengulang");
+            } while(ulangi)
+
+            document.write(`Perulangan sudah dilakukan sebanyak ${counter} X`)
+
+            // mendingan pake while (2b atau 2a)
+        </script>
+    </body>
+</html>

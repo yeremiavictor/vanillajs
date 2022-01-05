@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            perulangan for
+        </title>
+    </head>
+    <body>
+        <script>
+            var pilih = prompt("pilih perulangan (a) i++ / (b) i+2 / (c) menghitung mundur")
+
+            if( pilih == "a"){
+
+                for( i = 0; i <10; i++){
+                    document.write(`Perulangan ke ${i} <br>`);
+                }
+            }
+
+            if (pilih == "b"){
+
+                for( i = 0; i <50; i+=2){
+                    document.write(`Perulangan ke ${i} <br>`);
+                }
+            }
+
+            
+            if( pilih == "c"){
+
+                for( i = 10; i >0; i--){
+                    document.write(`Perulangan ke ${i} <br>`);
+                }
+            }
+
+        </script>
+    </body>
+</html>
